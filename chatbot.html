@@ -2,6 +2,34 @@
 <html>
   <head>
     <title>Chatbot</title>
+    <style>
+      .send-button {
+        background-color: #198150;
+        color: white;
+        padding: 12px 20px;
+        margin-left: 10px;
+        border: none;
+        border-radius: 10px;
+        font-size: 15px;
+        cursor: pointer;
+      }
+      .chat-input {
+        padding: 12px 15px;
+        border-radius: 10px;
+        border-width: 1px;
+        font-size: 15px;
+
+        flex-grow: 1;
+      }
+      .chat-input-container {
+        display: flex;
+      }
+      .app-container {
+        max-width: 600px;
+        margin-left: auto;
+        margin-right: auto;
+      }
+    </style>
   </head>
   <body>
     <div class="js-container"></div>
@@ -71,17 +99,19 @@
         }
 
         return (
-          <>
+          <div className="chat-input-container">
             <input
               placeholder="Send a message to Chatbot" size="30"
               onChange={saveInputText}
               onKeyDown={handleKeyDown}
               value={inputText}
+              className="chat-input"
             />
             <button
             onClick={sendMessage}
+            className="send-button"
             >Send</button>
-          </>
+          </div>
         );
       }
 
@@ -101,7 +131,11 @@
         }
         */
         return (
-          <div>
+          <div className={
+            sender === 'user' 
+              ? "chat-message-user" 
+              : 'chat-message-robot'
+            }>
             {sender === 'robot' && (
               <img src="Assets/robot.png" width="50"/>
             )}
@@ -152,7 +186,7 @@
         // const setChatMessages = array[1];
 
         return(
-          <>
+          <div className="app-container">
             <ChatInput
               chatMessages={chatMessages}
               setChatMessages={setChatMessages}
@@ -160,7 +194,7 @@
             <ChatMessages
               chatMessages={chatMessages}
             />
-          </>
+          </div>
         );
       }
 
