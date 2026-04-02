@@ -6,107 +6,107 @@ export function CheckoutPage() {
     <>
       <title>Checkout</title>
 
-      <div ClassName="checkout-header">
-        <div ClassName="header-content">
-          <div ClassName="checkout-header-left-section">
+      <div className="checkout-header">
+        <div className="header-content">
+          <div className="checkout-header-left-section">
             <a href="index.html">
-              <img ClassName="logo" src="images/logo.png" />
-              <img ClassName="mobile-logo" src="images/mobile-logo.png" />
+              <img className="logo" src="images/logo.png" />
+              <img className="mobile-logo" src="images/mobile-logo.png" />
             </a>
           </div>
 
-          <div ClassName="checkout-header-middle-section">
+          <div className="checkout-header-middle-section">
             Checkout (
-            <a ClassName="return-to-home-link" href="index.html">
+            <a className="return-to-home-link" href="index.html">
               3 items
             </a>
             )
           </div>
 
-          <div ClassName="checkout-header-right-section">
+          <div className="checkout-header-right-section">
             <img src="images/icons/checkout-lock-icon.png" />
           </div>
         </div>
       </div>
 
-      <div ClassName="checkout-page">
-        <div ClassName="page-title">Review your order</div>
+      <div className="checkout-page">
+        <div className="page-title">Review your order</div>
 
-        <div ClassName="checkout-grid">
-          <div ClassName="order-summary">
-            <div ClassName="cart-item-container">
-              <div ClassName="delivery-date">
+        <div className="checkout-grid">
+          <div className="order-summary">
+            <div className="cart-item-container">
+              <div className="delivery-date">
                 Delivery date: Tuesday, June 21
               </div>
 
-              <div ClassName="cart-item-details-grid">
+              <div className="cart-item-details-grid">
                 <img
-                  ClassName="product-image"
+                  className="product-image"
                   src="images/products/athletic-cotton-socks-6-pairs.jpg"
                 />
 
-                <div ClassName="cart-item-details">
-                  <div ClassName="product-name">
+                <div className="cart-item-details">
+                  <div className="product-name">
                     Black and Gray Athletic Cotton Socks - 6 Pairs
                   </div>
-                  <div ClassName="product-price">$10.90</div>
-                  <div ClassName="product-quantity">
+                  <div className="product-price">$10.90</div>
+                  <div className="product-quantity">
                     <span>
-                      Quantity: <span ClassName="quantity-label">2</span>
+                      Quantity: <span className="quantity-label">2</span>
                     </span>
-                    <span ClassName="update-quantity-link link-primary">
+                    <span className="update-quantity-link link-primary">
                       Update
                     </span>
-                    <span ClassName="delete-quantity-link link-primary">
+                    <span className="delete-quantity-link link-primary">
                       Delete
                     </span>
                   </div>
                 </div>
 
-                <div ClassName="delivery-options">
-                  <div ClassName="delivery-options-title">
+                <div className="delivery-options">
+                  <div className="delivery-options-title">
                     Choose a delivery option:
                   </div>
-                  <div ClassName="delivery-option">
+                  <div className="delivery-option">
                     <input
                       type="radio"
                       checked
-                      ClassName="delivery-option-input"
+                      className="delivery-option-input"
                       name="delivery-option-1"
                     />
                     <div>
-                      <div ClassName="delivery-option-date">
+                      <div className="delivery-option-date">
                         Tuesday, June 21
                       </div>
-                      <div ClassName="delivery-option-price">FREE Shipping</div>
+                      <div className="delivery-option-price">FREE Shipping</div>
                     </div>
                   </div>
-                  <div ClassName="delivery-option">
+                  <div className="delivery-option">
                     <input
                       type="radio"
-                      ClassName="delivery-option-input"
+                      className="delivery-option-input"
                       name="delivery-option-1"
                     />
                     <div>
-                      <div ClassName="delivery-option-date">
+                      <div className="delivery-option-date">
                         Wednesday, June 15
                       </div>
-                      <div ClassName="delivery-option-price">
+                      <div className="delivery-option-price">
                         $4.99 - Shipping
                       </div>
                     </div>
                   </div>
-                  <div ClassName="delivery-option">
+                  <div className="delivery-option">
                     <input
                       type="radio"
-                      ClassName="delivery-option-input"
+                      className="delivery-option-input"
                       name="delivery-option-1"
                     />
                     <div>
-                      <div ClassName="delivery-option-date">
+                      <div className="delivery-option-date">
                         Monday, June 13
                       </div>
-                      <div ClassName="delivery-option-price">
+                      <div className="delivery-option-price">
                         $9.99 - Shipping
                       </div>
                     </div>
@@ -115,80 +115,80 @@ export function CheckoutPage() {
               </div>
             </div>
 
-            <div ClassName="cart-item-container">
-              <div ClassName="delivery-date">
+            <div className="cart-item-container">
+              <div className="delivery-date">
                 Delivery date: Wednesday, June 15
               </div>
 
-              <div ClassName="cart-item-details-grid">
+              <div className="cart-item-details-grid">
                 <img
-                  ClassName="product-image"
+                  className="product-image"
                   src="images/products/intermediate-composite-basketball.jpg"
                 />
 
-                <div ClassName="cart-item-details">
-                  <div ClassName="product-name">
+                <div className="cart-item-details">
+                  <div className="product-name">
                     Intermediate Size Basketball
                   </div>
-                  <div ClassName="product-price">$20.95</div>
-                  <div ClassName="product-quantity">
+                  <div className="product-price">$20.95</div>
+                  <div className="product-quantity">
                     <span>
-                      Quantity: <span ClassName="quantity-label">1</span>
+                      Quantity: <span className="quantity-label">1</span>
                     </span>
-                    <span ClassName="update-quantity-link link-primary">
+                    <span className="update-quantity-link link-primary">
                       Update
                     </span>
-                    <span ClassName="delete-quantity-link link-primary">
+                    <span className="delete-quantity-link link-primary">
                       Delete
                     </span>
                   </div>
                 </div>
 
-                <div ClassName="delivery-options">
-                  <div ClassName="delivery-options-title">
+                <div className="delivery-options">
+                  <div className="delivery-options-title">
                     Choose a delivery option:
                   </div>
 
-                  <div ClassName="delivery-option">
+                  <div className="delivery-option">
                     <input
                       type="radio"
-                      ClassName="delivery-option-input"
+                      className="delivery-option-input"
                       name="delivery-option-2"
                     />
                     <div>
-                      <div ClassName="delivery-option-date">
+                      <div className="delivery-option-date">
                         Tuesday, June 21
                       </div>
-                      <div ClassName="delivery-option-price">FREE Shipping</div>
+                      <div className="delivery-option-price">FREE Shipping</div>
                     </div>
                   </div>
-                  <div ClassName="delivery-option">
+                  <div className="delivery-option">
                     <input
                       type="radio"
                       checked
-                      ClassName="delivery-option-input"
+                      className="delivery-option-input"
                       name="delivery-option-2"
                     />
                     <div>
-                      <div ClassName="delivery-option-date">
+                      <div className="delivery-option-date">
                         Wednesday, June 15
                       </div>
-                      <div ClassName="delivery-option-price">
+                      <div className="delivery-option-price">
                         $4.99 - Shipping
                       </div>
                     </div>
                   </div>
-                  <div ClassName="delivery-option">
+                  <div className="delivery-option">
                     <input
                       type="radio"
-                      ClassName="delivery-option-input"
+                      className="delivery-option-input"
                       name="delivery-option-2"
                     />
                     <div>
-                      <div ClassName="delivery-option-date">
+                      <div className="delivery-option-date">
                         Monday, June 13
                       </div>
-                      <div ClassName="delivery-option-price">
+                      <div className="delivery-option-price">
                         $9.99 - Shipping
                       </div>
                     </div>
@@ -198,35 +198,35 @@ export function CheckoutPage() {
             </div>
           </div>
 
-          <div ClassName="payment-summary">
-            <div ClassName="payment-summary-title">Payment Summary</div>
+          <div className="payment-summary">
+            <div className="payment-summary-title">Payment Summary</div>
 
-            <div ClassName="payment-summary-row">
+            <div className="payment-summary-row">
               <div>Items (3):</div>
-              <div ClassName="payment-summary-money">$42.75</div>
+              <div className="payment-summary-money">$42.75</div>
             </div>
 
-            <div ClassName="payment-summary-row">
+            <div className="payment-summary-row">
               <div>Shipping &amp; handling:</div>
-              <div ClassName="payment-summary-money">$4.99</div>
+              <div className="payment-summary-money">$4.99</div>
             </div>
 
-            <div ClassName="payment-summary-row subtotal-row">
+            <div className="payment-summary-row subtotal-row">
               <div>Total before tax:</div>
-              <div ClassName="payment-summary-money">$47.74</div>
+              <div className="payment-summary-money">$47.74</div>
             </div>
 
-            <div ClassName="payment-summary-row">
+            <div className="payment-summary-row">
               <div>Estimated tax (10%):</div>
-              <div ClassName="payment-summary-money">$4.77</div>
+              <div className="payment-summary-money">$4.77</div>
             </div>
 
-            <div ClassName="payment-summary-row total-row">
+            <div className="payment-summary-row total-row">
               <div>Order total:</div>
-              <div ClassName="payment-summary-money">$52.51</div>
+              <div className="payment-summary-money">$52.51</div>
             </div>
 
-            <button ClassName="place-order-button button-primary">
+            <button className="place-order-button button-primary">
               Place your order
             </button>
           </div>
