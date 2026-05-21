@@ -2,9 +2,9 @@ import axios from "axios";
 import dayjs from "dayjs";
 import { useState, useEffect, Fragment } from "react";
 import { Link } from "react-router";
-import { Header } from "../components/Header";
-import { TrackingPage } from "./TrackingPage";
-import { formatMoney } from "../utils/money";
+import { Header } from "../../components/Header";
+import { TrackingPage } from "../TrackingPage";
+import { formatMoney } from "../../utils/money";
 import "./OrdersPage.css";
 
 export function OrdersPage({ cart }) {
@@ -89,9 +89,14 @@ export function OrdersPage({ cart }) {
                             {orderProduct.name}
                           </div>
                           <div className="product-delivery-date">
-                            Arriving on: {dayjs(orderProduct.estimatedDeliveryTimeMs).format('MMMM D')}
+                            Arriving on:{" "}
+                            {dayjs(orderProduct.estimatedDeliveryTimeMs).format(
+                              "MMMM D",
+                            )}
                           </div>
-                          <div className="product-quantity">Quantity: {orderProduct.quantity}</div>
+                          <div className="product-quantity">
+                            Quantity: {orderProduct.quantity}
+                          </div>
                           <button className="buy-again-button button-primary">
                             <img
                               className="buy-again-icon"
@@ -112,13 +117,13 @@ export function OrdersPage({ cart }) {
                         </div>
                       </Fragment>
                     );
-                  })};
-                  
+                  })}
+                  ;
                 </div>
               </div>
             );
-          })};
-
+          })}
+          ;
         </div>
       </div>
     </>
